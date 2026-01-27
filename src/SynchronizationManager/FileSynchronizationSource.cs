@@ -8,7 +8,7 @@ public interface ISynchronizationSource
     IEnumerable<Configuration> GetConfigurations();
 }
 
-public class SynchronizationSource : ISynchronizationSource
+public class FileSynchronizationSource : ISynchronizationSource
 {
     public IEnumerable<Configuration> GetConfigurations()
     {
