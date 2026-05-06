@@ -6,12 +6,12 @@ using Newtonsoft.Json;
 
 namespace SynchronizationManager;
 
-public interface ISynchronizationSource
+public interface IConfigurationSource
 {
     IEnumerable<Configuration> GetConfigurations();
 }
 
-public class FileSynchronizationSource(string pathToConfigurationFiles, ILogger logger) : ISynchronizationSource
+public class FileConfigurationSource(string pathToConfigurationFiles, ILogger logger) : IConfigurationSource
 {
     private const string ExtensionNameForConfigFiles = "fsc";
 

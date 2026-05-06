@@ -5,17 +5,17 @@ using Microsoft.Extensions.Logging;
 
 namespace SynchronizationManager;
 
-public class SynchronizationProcess(ISynchronizationSource synchronizationSource, ILogger logger, ISynchronizer synchronizer)
+public class SynchronizationProcess(IConfigurationSource configurationSource, ILogger logger, ISynchronizer synchronizer)
 {
     public async Task Start(CancellationToken cancellationToken)
     {
-        var configurations = synchronizationSource.GetConfigurations();
+        var configurations = configurationSource.GetConfigurations();
 
         var process = new List<Synchronization>();
 
         foreach (var configuration in configurations)
         {
-            var synchronization = synchronizer.Run(configuration);
+            var synchronization = synchronizer.Run(configuration, cancellationToken);
             process.Add(synchronization);
         }
 
