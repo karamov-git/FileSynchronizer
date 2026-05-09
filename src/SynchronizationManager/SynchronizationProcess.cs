@@ -2,6 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
+using Synchronizations;
 
 namespace SynchronizationManager;
 
@@ -15,7 +16,7 @@ public class SynchronizationProcess(IConfigurationSource configurationSource, IL
 
         foreach (var configuration in configurations)
         {
-            var synchronization = synchronizer.Run(configuration, cancellationToken);
+            var synchronization = synchronizer.Run(configuration, logger, cancellationToken);
             process.Add(synchronization);
         }
 

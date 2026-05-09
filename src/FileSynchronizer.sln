@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SynchronizationManager", "S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SynchronizationManagerTests", "SynchronizationManagerTests\SynchronizationManagerTests.csproj", "{CA12B54F-5312-44C4-9ACB-3E5788C5BF8D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Synchronizations", "Synchronizations\Synchronizations.csproj", "{AEE2CBD3-702E-4300-9B3A-FFD873F4549A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confgirations", "Confgirations\Confgirations.csproj", "{CB3417C4-DD51-4894-80F2-2EEA1F29D273}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{CA12B54F-5312-44C4-9ACB-3E5788C5BF8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA12B54F-5312-44C4-9ACB-3E5788C5BF8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA12B54F-5312-44C4-9ACB-3E5788C5BF8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEE2CBD3-702E-4300-9B3A-FFD873F4549A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEE2CBD3-702E-4300-9B3A-FFD873F4549A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEE2CBD3-702E-4300-9B3A-FFD873F4549A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEE2CBD3-702E-4300-9B3A-FFD873F4549A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB3417C4-DD51-4894-80F2-2EEA1F29D273}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB3417C4-DD51-4894-80F2-2EEA1F29D273}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB3417C4-DD51-4894-80F2-2EEA1F29D273}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB3417C4-DD51-4894-80F2-2EEA1F29D273}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using Confgirations;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
